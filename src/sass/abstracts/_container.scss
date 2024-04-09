@@ -1,0 +1,31 @@
+@import "../abstracts/responsive";
+
+.container {
+    margin: auto;
+    transition: width 300ms;
+
+    @include respond-to("desktop") {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    @include respond-to("mobile") {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@mixin container {
+    margin: auto;
+    transition: width 300ms;
+
+    @include respond-to("desktop") {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    @include respond-to("mobile") {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

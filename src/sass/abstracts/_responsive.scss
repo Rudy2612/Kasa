@@ -1,0 +1,13 @@
+$mobile: 768px;
+
+@mixin respond-to($media) {
+    @if $media == "mobile" {
+        @media screen and (max-width: $mobile) {
+            @content;
+        }
+    } @else if $media == "desktop" {
+        @media screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+}
