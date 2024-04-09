@@ -1,0 +1,45 @@
+@import "../../sass/abstracts/container";
+@import "../../sass/abstracts/responsive";
+
+.header {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 45px;
+    margin-bottom: 50px;
+
+    &__logo {
+        @include respond-to("desktop") {
+            height: 68px;
+        }
+
+        @include respond-to("mobile") {
+            height: 45px;
+        }
+    }
+
+    &__link {
+        font-family: "Montserrat";
+        font-weight: 500;
+        color: #000000;
+
+        @include respond-to("desktop") {
+            font-size: 24px;
+        }
+
+        @include respond-to("mobile") {
+            font-size: 12px;
+        }
+
+        &_wrap {
+            display: flex;
+            gap: 30px;
+        }
+
+        &--active {
+            text-decoration: underline #000;
+        }
+    }
+}
