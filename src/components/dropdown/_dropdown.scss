@@ -1,0 +1,67 @@
+.dropdown {
+    width: 100%;
+    margin-bottom: 30px;
+
+    &__topbar {
+        display: flex;
+        background: #ff6060;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 52px;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+        @include respond-to("mobile") {
+            height: 30px;
+        }
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        color: white;
+        user-select: none;
+
+        @include respond-to("mobile") {
+            font-size: 13px;
+        }
+    }
+
+    &__chevron {
+        height: 32px;
+        fill: white;
+        cursor: pointer;
+
+        @include respond-to("mobile") {
+            height: 20px;
+        }
+
+        &.open {
+            rotate: 180deg;
+        }
+    }
+
+    &__text-container {
+        background: #f6f6f673;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    &__content {
+        margin: 0;
+        padding: 0;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.67px;
+
+        list-style-type: none;
+
+        @include respond-to("mobile") {
+            font-size: 13px;
+        }
+    }
+}
