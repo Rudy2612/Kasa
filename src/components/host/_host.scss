@@ -1,0 +1,36 @@
+.host {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    @include respond-to("desktop") {
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ff6060;
+        text-align: right;
+        margin: 0;
+
+        @include respond-to("mobile") {
+            font-size: 12px;
+        }
+    }
+
+    &__picture {
+        width: 64px;
+        height: 64px;
+
+        object-fit: cover;
+
+        border-radius: 100px;
+
+        @include respond-to("mobile") {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
