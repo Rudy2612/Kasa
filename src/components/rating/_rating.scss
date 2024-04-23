@@ -1,0 +1,16 @@
+.rating {
+    display: flex;
+    gap: 10px;
+    justify-items: flex-end;
+
+    @include respond-to("mobile") {
+        gap: 0px
+    }
+
+    &__star {
+        height: 24px;
+        @include respond-to("mobile") {
+            height: 13px;
+        }
+    }
+}
