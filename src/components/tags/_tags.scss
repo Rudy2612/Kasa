@@ -1,0 +1,37 @@
+.tags {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    &__item {
+        width: auto;
+        padding: 0 5px 0 5px;
+        min-width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        background: #ff6060;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        user-select: none;
+
+        @include respond-to("mobile") {
+            height: 18px;
+            min-width: 84px;
+        }
+
+        span {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+
+            @include respond-to("mobile") {
+                font-size: 10px;
+            }
+        }
+    }
+}
