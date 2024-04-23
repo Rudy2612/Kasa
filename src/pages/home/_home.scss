@@ -6,14 +6,17 @@
 
         box-shadow: 0px 4px 4px 0px #00000040;
 
+
         @include respond-to("desktop") {
             height: 223px;
             border-radius: 25px;
+            margin-bottom: 50px;
         }
 
         @include respond-to("mobile") {
             height: 111px;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
 
         overflow: hidden;
