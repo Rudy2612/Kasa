@@ -4,14 +4,17 @@ import Carroussel from "../../components/carrousel";
 import Tags from "../../components/tags";
 import Host from "../../components/host";
 import Rating from "../../components/rating";
-import Dropdown from "../../components/dropdown/dropdown";
+import Dropdown from "../../components/dropdown";
+import Error from "../../pages/error/error"
 
 
 
 export default function Logement() {
     let { id } = useParams();
     let logement = logements.find((element) => element.id === id)
-    console.log(logement)
+
+    if (!logement)
+        return <Error />
 
     return (
         <div className="logement">
