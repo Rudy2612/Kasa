@@ -1,8 +1,21 @@
+@import "./abstracts/variable";
 @import "./abstracts/responsive";
 @import "./abstracts/container";
 
 @import "./base/reset";
 
+@import "../components/banner/banner";
+@import "../components/carrousel/carrousel";
+@import "../components/dropdown/dropdown";
+@import "../components/footer/footer";
 @import "../components/header/header";
+@import "../components/host/host";
+@import "../components/rating/rating";
+@import "../components/tags/tags";
+@import "../components/thumbnail_grid/thumbnail_grid";
+@import "../components/thumb/thumb";
 
+@import "../pages/about/about";
+@import "../pages/error/error";
 @import "../pages/home/home";
+@import "../pages/logement/logement";
