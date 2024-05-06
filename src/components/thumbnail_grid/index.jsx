@@ -1,5 +1,5 @@
 import logements from "../../assets/logements.json"
-import Thumb from "../thumb/thumb"
+import Thumb from "../thumb"
 
 export default function ThumbnailGrid() {
     return (
