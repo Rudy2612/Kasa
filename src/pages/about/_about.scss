@@ -1,0 +1,11 @@
+.about {
+    @include container;
+
+    &__wrap {
+        margin: 0 13% 0 13%;
+
+        @include respond-to("mobile") {
+            margin: 0;
+        }
+    }
+}
