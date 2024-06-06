@@ -13,5 +13,5 @@ export default function Host({ host }) {
 }
 
 Host.propTypes = {
-    host: PropTypes.array.isRequired,
+    host: PropTypes.object.isRequired,
 }

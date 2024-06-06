@@ -42,5 +42,8 @@ export default function Dropdown({ title, content }) {
 
 Dropdown.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.array
+    ])
 }
