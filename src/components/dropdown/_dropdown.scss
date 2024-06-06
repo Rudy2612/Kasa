@@ -45,7 +45,7 @@
 
     &__chevron {
         height: 32px;
-        fill: white;
+        color: white;
         cursor: pointer;
 
         @include respond-to("mobile") {

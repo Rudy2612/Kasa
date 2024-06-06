@@ -30,6 +30,12 @@
         cursor: pointer;
         user-select: none;
 
+        svg {
+            color: white;
+            width: 48px;
+            height: 80px;
+        }
+
         @include respond-to("desktop") {
             left: 25px;
         }
@@ -49,6 +55,12 @@
         transform: translate(0px, -50%);
         cursor: pointer;
         user-select: none;
+
+        svg {
+            color: white;
+            width: 48px;
+            height: 80px;
+        }
 
         @include respond-to("desktop") {
             right: 25px;
